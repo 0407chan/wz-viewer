@@ -1,2 +1,2 @@
-# wz-viewer
-wz 일일이 까보기 귀찮아서 만드는 뷰어
+# maple-demage-skin-simulator
+메이플 데미지 스킨 시뮬레이터
