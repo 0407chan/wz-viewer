@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/wz-viewer/static/css/main.938e7c00.chunk.css",
-    "main.js": "/wz-viewer/static/js/main.3f626856.chunk.js",
+    "main.js": "/wz-viewer/static/js/main.2a19914d.chunk.js",
     "runtime-main.js": "/wz-viewer/static/js/runtime-main.1b334dda.js",
     "static/css/2.296b8887.chunk.css": "/wz-viewer/static/css/2.296b8887.chunk.css",
-    "static/js/2.0a592f62.chunk.js": "/wz-viewer/static/js/2.0a592f62.chunk.js",
+    "static/js/2.3a511a25.chunk.js": "/wz-viewer/static/js/2.3a511a25.chunk.js",
     "index.html": "/wz-viewer/index.html",
-    "static/js/2.0a592f62.chunk.js.LICENSE.txt": "/wz-viewer/static/js/2.0a592f62.chunk.js.LICENSE.txt"
+    "static/js/2.3a511a25.chunk.js.LICENSE.txt": "/wz-viewer/static/js/2.3a511a25.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.1b334dda.js",
     "static/css/2.296b8887.chunk.css",
-    "static/js/2.0a592f62.chunk.js",
+    "static/js/2.3a511a25.chunk.js",
     "static/css/main.938e7c00.chunk.css",
-    "static/js/main.3f626856.chunk.js"
+    "static/js/main.2a19914d.chunk.js"
   ]
 }
