@@ -61,22 +61,22 @@ export const useGetDemageSkinAll = (query: {
   )
 }
 
-export const getWzImage = async (): Promise<GetDemageSkinResponse> => {
+export const getWz = async (url: string): Promise<GetDemageSkinResponse> => {
+  const newUrl = url.indexOf('/') === 0 ? url.substr(1) : url
   const result = await axios.get(
-    `https://maplestory.io/api/wz/KMS/353/UI/UIWindow4.img/enchantUI/miniGame/star/STAR`
+    `https://maplestory.io/api/wz/KMS/353/${newUrl}`
     // `https://maplestory.io/api/wz/KMS/353/UI/UIWindow4.img/enchantUI/miniGame/particle/0`
   )
   return result.data
 }
 
-export const useGetWzImage = (): UseQueryResult<
-  GetDemageSkinResponse,
-  unknown
-> => {
+export const useGetWz = (
+  url: string
+): UseQueryResult<GetDemageSkinResponse, unknown> => {
   return useQuery(
-    ['getWzImage'],
+    ['getWz', url],
     async () => {
-      return getWzImage()
+      return getWz(url)
     },
     {
       retry: false,
