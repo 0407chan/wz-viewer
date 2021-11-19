@@ -7,7 +7,7 @@ import Horizontal from './components/Horizontal'
 import Vertical from './components/Vertical'
 
 const App: React.FC = () => {
-  const [url, setUrl] = useState<string[]>([''])
+  const [url, setUrl] = useState<string[]>([])
   const wzQuery = useGetWz(url.join('/'))
 
   const onPrevUrl = () => {
@@ -53,7 +53,9 @@ const App: React.FC = () => {
     <S.Container>
       <S.Header>
         <Horizontal>
-          <Button onClick={onPrevUrl}>이전으로</Button>
+          <Button disabled={url.length === 0} onClick={onPrevUrl}>
+            이전으로
+          </Button>
           <Button onClick={() => setUrl([''])}>처음으로</Button>
         </Horizontal>
       </S.Header>
