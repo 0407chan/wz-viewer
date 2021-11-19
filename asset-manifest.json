@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/wz-viewer/static/css/main.938e7c00.chunk.css",
-    "main.js": "/wz-viewer/static/js/main.2a19914d.chunk.js",
+    "main.js": "/wz-viewer/static/js/main.a878ad09.chunk.js",
     "runtime-main.js": "/wz-viewer/static/js/runtime-main.1b334dda.js",
     "static/css/2.296b8887.chunk.css": "/wz-viewer/static/css/2.296b8887.chunk.css",
     "static/js/2.3a511a25.chunk.js": "/wz-viewer/static/js/2.3a511a25.chunk.js",
@@ -13,6 +13,6 @@
     "static/css/2.296b8887.chunk.css",
     "static/js/2.3a511a25.chunk.js",
     "static/css/main.938e7c00.chunk.css",
-    "static/js/main.2a19914d.chunk.js"
+    "static/js/main.a878ad09.chunk.js"
   ]
 }
