@@ -7,7 +7,6 @@ import React, { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import * as S from './style'
 
-const isDev = process.env.NODE_ENV === 'development'
 const Home: React.FC = () => {
   const navigate = useNavigate()
   const [url, setUrl] = useState<string[]>([])
@@ -61,7 +60,10 @@ const Home: React.FC = () => {
     <S.Container>
       <S.Header>
         <Horizontal>
-          <Button disabled={url.length === 0} onClick={onPrevUrl}>
+          <Button
+            disabled={url.filter((item) => item !== 'wz-viewer').length === 0}
+            onClick={onPrevUrl}
+          >
             이전으로
           </Button>
           <Button onClick={onHomeUrl}>처음으로</Button>
