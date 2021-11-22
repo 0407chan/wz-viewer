@@ -7,18 +7,18 @@ import React, { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import * as S from './style'
 
+const isDev = process.env.NODE_ENV === 'development'
 const Home: React.FC = () => {
   const navigate = useNavigate()
-  const [url, setUrl] = useState<string[]>([])
+  const [url, setUrl] = useState<string[]>(isDev ? [] : ['/wz-viewer'])
   const wzQuery = useGetWz(url.join('/'))
 
   const onPrevUrl = () => {
     const newUrl = [...url].slice(0, -1)
     navigate(newUrl.join('/'))
   }
-
   const onHomeUrl = () => {
-    navigate('/')
+    navigate(isDev ? '' : '/wz-viewer')
   }
   const onNextUrl = (newUrl: string) => {
     navigate([...url, newUrl].join('/'))
